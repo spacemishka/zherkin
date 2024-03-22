@@ -5,5 +5,6 @@ config ZMK_USB
 
 #config ZMK_ZHERKIN
 #    default "Zherkin"
-
+config ZMK_KEYBOARD_NAME
+    default "Zherkin"
 endif
