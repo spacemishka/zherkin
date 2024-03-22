@@ -1,2 +1,5 @@
-config SHIELD_ZHERKIN
-    def_bool $(shields_list_contains,zherkin)
+# Copyright (c) 2020 Nick Winans
+# SPDX-License-Identifier: MIT
+
+config SHIELD_NICE60
+	def_bool $(shields_list_contains,zherkin)
