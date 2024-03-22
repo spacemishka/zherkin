@@ -1,6 +1,9 @@
 if SHIELD_ZHERKIN
 
-config ZMK_ZHERKIN
-    default "Zherkin"
+config ZMK_USB
+	default y
+
+#config ZMK_ZHERKIN
+#    default "Zherkin"
 
 endif
