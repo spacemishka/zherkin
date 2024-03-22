@@ -30,8 +30,6 @@
    &kp LCTRL  &kp LALT   &kp C    &kp V    &kp B  &kp SPACE &kp B   &kp N   &kp M  &kp RET
 
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
     };
 };
