@@ -20,5 +20,5 @@
 include:
   - board: bluemicro840_v1
     shield: zherkin
-  - board: bluemicro840_v1
+  - board: nice_nano_v2
     shield: zherkin
