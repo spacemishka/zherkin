@@ -1,0 +1,35 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/outputs.h>
+
+/ {
+    behaviors {
+        lh_pht: left_positional_hold_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-unless-interrupted";
+            tapping-term-ms = <100>;                        // <---[[produces tap if held longer than tapping-term-ms]]
+            quick-tap-ms = <200>;
+            bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = <5 6 7 8 9 10>;    // <---[[right-hand keys]]
+        };
+    };
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// |   ESC   |    Q    |    W    |    E    |    R    |    T    |                                          |    Y    |    U    |    I    |    O    |    P    |    \    |
+// |   TAB   |    A    |    S    |    D    |    F    |    G    |                                          |    H    |    J    |    K    |    L    |    ;    |    '    |
+// |  SHIFT  |    Z    |    X    |    C    |    V    |    B    | CTRL+A  | CTRL+C  |  |  CTRL+V |  CTRL+X |    N    |    M    |    ,    |    .    |    /    |  R CTRL |
+//                               |   GUI   |   DEL   | RETURN  |  SPACE  | ESCAPE  |  |  RETURN |  SPACE  |   TAB   |   BSPC  |  R ALT  |
+            bindings = <
+   &kp Q   &kp W   &kp E   &kp R   &kp T   &kp Y   &kp U   &kp I   &kp O   &kp P
+   &lh_pht LSFT A   &kp S   &kp D   &kp F   &kp G   &kp H   &kp J   &kp K   &kp L   &kp ESC
+   &kp LCTRL  &kp LALT   &kp C    &kp V    &kp B  &kp SPACE &kp B   &kp N   &kp M  &kp RET
+
+            >;
+        };
+    };
+};
