@@ -1,0 +1,8 @@
+file_format: "1"
+id: zherkin
+name: ZHERKIN
+type: shield
+url: https://github.com/spacemishka/zherkin
+requires: [pro_micro]
+features:
+  - keys
