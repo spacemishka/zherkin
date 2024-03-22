@@ -14,9 +14,9 @@
 // |  SHIFT  |    Z    |    X    |    C    |    V    |    B    | CTRL+A  | CTRL+C  |  |  CTRL+V |  CTRL+X |    N    |    M    |    ,    |    .    |    /    |  R CTRL |
 //                               |   GUI   |   DEL   | RETURN  |  SPACE  | ESCAPE  |  |  RETURN |  SPACE  |   TAB   |   BSPC  |  R ALT  |
             bindings = <
-    KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,
-    KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_H,    KC_J,    KC_K,    KC_L,    KC_ESC,
-    CTL_Z,   ALT_X,   FN3_C,   FN4_V,   FN2_BSPC,FN1_SPC, FN5_B,   ALT_N,   CTL_M,   SFT_ENT
+   &kp Q   &kp W   &kp E   &kp R   &kp T   &kp Y   &kp U   &kp I   &kp O   &kp P
+   &kp A   &kp S   &kp D   &kp F   &kp G   &kp H   &kp J   &kp K   &kp L   &kp ESC
+   &kp LCTRL  &kp LALT   &kp C    &kp V    &kp B  &kp SPACE &kp B   &kp N   &kp M  &kp RET
 
             >;
 
