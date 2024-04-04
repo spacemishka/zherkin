@@ -1,14 +1,10 @@
 /* Make layout upside down = USB port on left side 
 #undef MATRIX_ROW_PINS
 #undef MATRIX_COL_PINS
-#define MATRIX_ROW_PINS { B6, B2, B3, B1, F7 }
-#define MATRIX_COL_PINS { D0, D4, C6, D7, E6, B4 }
 */
 #include <dt-bindings/zmk/matrix_transform.h>
 
-&pro_micro_serial { status = "disabled"; };
-
-&pro_micro_spi {
+&promicro_spi {
 	status = "okay";
 	cs-gpios = <&pro_micro 16 GPIO_ACTIVE_LOW>;
 	shifter: 595@0 {
