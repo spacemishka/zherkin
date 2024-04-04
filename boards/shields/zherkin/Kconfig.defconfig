@@ -7,4 +7,6 @@ config ZMK_USB
 #    default "Zherkin"
 config ZMK_KEYBOARD_NAME
     default "Zherkin"
+config SPI
+	default y
 endif
