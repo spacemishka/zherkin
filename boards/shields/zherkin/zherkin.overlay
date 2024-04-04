@@ -4,7 +4,7 @@
 */
 #include <dt-bindings/zmk/matrix_transform.h>
 
-&promicro_spi {
+&pro_micro_spi {
 	status = "okay";
 	cs-gpios = <&pro_micro 16 GPIO_ACTIVE_LOW>;
 	shifter: 595@0 {
