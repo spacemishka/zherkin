@@ -6,7 +6,7 @@
 
 
 / {
-    # Define the matrix
+
     kscan0: kscan {
         compatible = "zmk,kscan-gpio-matrix";
         label = "KSCAN";
@@ -29,5 +29,5 @@
             <&shifter 7 (GPIO_ACTIVE_HIGH)>;
     };
 
-    # … the rest of the configuration
+
 }
