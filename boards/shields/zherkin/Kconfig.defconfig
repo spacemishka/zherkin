@@ -9,4 +9,5 @@ config ZMK_KEYBOARD_NAME
     default "Zherkin"
 config SPI
 	default y
+CONFIG_PINCTRL=y
 endif
