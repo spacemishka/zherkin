@@ -6,12 +6,12 @@
     status = "okay";
     clock-frequency = <I2C_BITRATE_FAST>;
 
-    right_io: mcp23017@20 {
-        compatible = "microchip,mcp230xx";
+    shifter: 595@0 {
+        compatible = "zmk,gpio-595";
         status = "okay";
         gpio-controller;
-        reg = <0x20>;
+        reg = <0>;
         #gpio-cells = <2>;
-        ngpios = <16>;
+        ngpios = <8>;
     };
 };
