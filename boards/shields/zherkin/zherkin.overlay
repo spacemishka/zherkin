@@ -5,3 +5,29 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 
 
+/ {
+    # Define the matrix
+    kscan0: kscan {
+        compatible = "zmk,kscan-gpio-matrix";
+        label = "KSCAN";
+        diode-direction = "col2row";
+        row-gpios =
+            <&xiao_d 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+            <&xiao_d 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+            <&xiao_d 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+            <&xiao_d 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+            <&xiao_d 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+            <&xiao_d 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+        col-gpios =
+            <&shifter 0 (GPIO_ACTIVE_HIGH)>,
+            <&shifter 1 (GPIO_ACTIVE_HIGH)>,
+            <&shifter 2 (GPIO_ACTIVE_HIGH)>,
+            <&shifter 3 (GPIO_ACTIVE_HIGH)>,
+            <&shifter 4 (GPIO_ACTIVE_HIGH)>,
+            <&shifter 5 (GPIO_ACTIVE_HIGH)>,
+            <&shifter 6 (GPIO_ACTIVE_HIGH)>,
+            <&shifter 7 (GPIO_ACTIVE_HIGH)>;
+    };
+
+    # … the rest of the configuration
+}
