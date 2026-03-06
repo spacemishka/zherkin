@@ -18,12 +18,12 @@
 #
 ---
 include:
-  - board: bluemicro840_v1
+  - board: bluemicro840
     shield: zherkin
   - board: nice_nano_v2
     shield: zherkin
     artifact-name: nice_nano_zherkin
-  - board: bluemicro840_v1
+  - board: bluemicro840
     shield: settings_reset
   - board: nice_nano_v2
     shield: settings_reset
